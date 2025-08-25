@@ -29,4 +29,40 @@ const experienceData: experienceDataT = [
   },
 ];
 
-export { experienceData };
+const projects = [
+  {
+    id: "project1",
+    projectTitle: "Project 1",
+    description: "",
+    projectLink: "",
+    projectImage: "/images/background.avif",
+  },
+  {
+    id: "project2",
+    projectTitle: "Project 2",
+    description: "",
+    projectLink: "",
+    projectImage: "/images/work.avif",
+  },
+  {
+    id: "project3",
+    projectTitle: "Project 3",
+    description: "",
+    projectLink: "",
+    projectImage: "/images/background.jpg",
+  },
+];
+
+const skills = [
+  { id: "skill1", title: "HTML", icon: "/html.svg" },
+  { id: "skill2", title: "CSS", icon: "/css.svg" },
+  { id: "skill3", title: "JavaScript", icon: "/javascript.svg" },
+  { id: "skill4", title: "Python", icon: "/python.svg" },
+  { id: "skill5", title: "Adobe XD", icon: "/adobeXD.svg" },
+  { id: "skill6", title: "Illustrator", icon: "/illustrator.svg" },
+  { id: "skill7", title: "Photoshop", icon: "/photoshop.svg" },
+  { id: "skill8", title: "Wordpress", icon: "/wordpress.svg" },
+  { id: "skill9", title: "Figma", icon: "/figma.svg" },
+];
+
+export { experienceData, projects, skills };

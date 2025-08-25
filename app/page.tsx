@@ -2,9 +2,11 @@ import { downVariant } from "@/animations/variants";
 import Heading from "@/components/Heading";
 import AnimatedSection from "@/components/AnimatedSection";
 import Work from "@/components/Work";
-import { experienceData } from "@/constants/data";
+import { experienceData, projects, skills } from "@/constants/data";
 import Experience from "@/components/Experience";
 import { experienceObj } from "@/types/types";
+import Image from "next/image";
+import Marquee from "@/components/Marquee";
 
 export default function Home() {
   const para = (
@@ -35,11 +37,9 @@ export default function Home() {
               Selected Work
             </h1>
             <div className="w-full grid grid-cols-2 gap-2">
-              {["/images/background.avif", "/images/background.jpg"].map(
-                (img, idx) => (
-                  <Work key={idx} img={img} idx={idx} />
-                )
-              )}
+              {projects.map((prj, idx) => (
+                <Work key={prj.id} prj={prj} />
+              ))}
             </div>
           </div>
 
@@ -51,6 +51,13 @@ export default function Home() {
               ))}
             </ul>
           </div>
+
+          <div className="flex flex-col gap-5">
+            <h1 className="text-xl tracking-tight font-medium">Skills</h1>
+            <Marquee />
+          </div>
+
+          <div className="flex flex-col gap-5"></div>
         </AnimatedSection>
       </div>
     </main>

@@ -14,4 +14,16 @@ type experienceObj = {
 
 type experienceDataT = experienceObj[];
 
-export type { experienceObj, experienceDataT };
+type prjObject = {
+  id: string;
+  projectTitle: string;
+  description: string;
+  projectLink: string;
+  projectImage: string;
+};
+
+type prjArray = prjObject[];
+
+type SkillObj = { id: string; title: string; icon: string };
+
+export type { experienceObj, experienceDataT, prjArray, prjObject, SkillObj };

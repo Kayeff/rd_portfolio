@@ -15,7 +15,7 @@ export default function Overlay() {
             delay: 0.2 * item,
             ease: [0.25, 0.1, 0.25, 1],
           }}
-          className="bg-black w-full will-change-transform"
+          className="bg-foreground w-full will-change-transform"
         />
       ))}
     </div>
