@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import { geistSans } from "@/styles/fonts/fonts";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Ronak Dobariya - Designer",
@@ -17,11 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.className} bg-background text-foreground antialiased`}
+        className={`${geistSans.className} bg-background text-foreground antialiased flex flex-col gap-20 relative`}
       >
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

@@ -25,5 +25,13 @@ type prjObject = {
 type prjArray = prjObject[];
 
 type SkillObj = { id: string; title: string; icon: string };
+type SocialLinkObj = { type: string; icon?: string; href: string };
 
-export type { experienceObj, experienceDataT, prjArray, prjObject, SkillObj };
+export type {
+  experienceObj,
+  experienceDataT,
+  prjArray,
+  prjObject,
+  SkillObj,
+  SocialLinkObj,
+};

@@ -2,6 +2,7 @@
 import Heading from "./Heading";
 import { getTodaysDate } from "@/utils/getTodaysDate";
 import Overlay from "./Overlay";
+import AnimatedLink from "./AnimatedLink";
 
 export default function Footer() {
   return (
@@ -20,9 +21,13 @@ export default function Footer() {
 
         <div className="w-full flex items-center justify-between">
           <p className="font-semibold text-lg tracking-tight">&copy; 2025</p>
-          <p className="text-lg">
+          <p className="text-lg flex items-center gap-1">
             Made by{" "}
-            <span className="font-semibold tracking-tight">Kaif Saiyed</span>
+            <span className="font-semibold tracking-tight">
+              <AnimatedLink
+                link={{ type: "Kaif Saiyed", icon: "", href: "" }}
+              />
+            </span>
           </p>
           <p className="font-semibold text-lg tracking-tight">
             {getTodaysDate()}

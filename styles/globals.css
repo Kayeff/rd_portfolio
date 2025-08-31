@@ -11,6 +11,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-highlight: #e71d1d;
+  --color-blue: #002147;
+  --color-purple: #5f2074;
+  --color-green: #0e5f1b;
   --font-sans: var(--font-geist-sans);
 }
 
@@ -24,7 +27,7 @@
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0px auto;
   padding: 0 64px;
   width: 100%;

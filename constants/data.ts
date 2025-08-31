@@ -1,4 +1,5 @@
 import { experienceDataT } from "@/types/types";
+import { Blend, Citrus, Frame, Image } from "lucide-react";
 
 const experienceData: experienceDataT = [
   {
@@ -65,4 +66,38 @@ const skills = [
   { id: "skill9", title: "Figma", icon: "/figma.svg" },
 ];
 
-export { experienceData, projects, skills };
+const socials = [
+  { type: "Gmail", icon: "/gmail.svg", href: "" },
+  { type: "Instagram", icon: "/instagram.svg", href: "" },
+  { type: "Linked In", icon: "/linkedin.svg", href: "" },
+  { type: "Facebook", icon: "/facebook.svg", href: "" },
+];
+
+const services = [
+  {
+    title: "UX & Interface design",
+    className: "col-span-6",
+    icon: Frame,
+    para: "Every element is thoughtfully crafted to improve usability, accessibility, and overall user satisfaction.",
+  },
+  {
+    title: "Creative Design & Strategy",
+    className: "col-span-4",
+    icon: Blend,
+    para: "Great design starts with strategy. I help brands shape their digital identity through creative concepts, design thinking, and user-focused strategies that align with business goals.",
+  },
+  {
+    title: "Image Editing",
+    className: "col-span-4",
+    icon: Image,
+    para: "From refining visuals to creating eye-catching assets, I provide professional image editing that enhances product appeal and ensures consistency across digital platforms.",
+  },
+  {
+    title: "Graphics",
+    className: "col-span-6",
+    icon: Citrus,
+    para: "Visual storytelling is key in digital products. I create engaging graphics, icons, and illustrations that elevate user interfaces and strengthen brand presence.",
+  },
+];
+
+export { experienceData, projects, skills, socials, services };
