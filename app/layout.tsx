@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
-import { geistSans } from "@/styles/fonts/fonts";
+import { geistSans } from "@/fonts/fonts";
 
 export const metadata: Metadata = {
   title: "Ronak Dobariya - Designer",

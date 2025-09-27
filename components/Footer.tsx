@@ -3,6 +3,7 @@ import Heading from "./Heading";
 import { getTodaysDate } from "@/utils/getTodaysDate";
 import Overlay from "./Overlay";
 import AnimatedLink from "./AnimatedLink";
+import CurrentDate from "./CurrentDate";
 
 export default function Footer() {
   return (
@@ -29,9 +30,7 @@ export default function Footer() {
               />
             </span>
           </p>
-          <p className="font-semibold text-lg tracking-tight">
-            {getTodaysDate()}
-          </p>
+          <CurrentDate />
         </div>
       </div>
       <Overlay />
